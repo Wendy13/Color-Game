@@ -66,7 +66,7 @@ for (var i=0; i < squares.length; i++){
 // add click listeners to squares
   squares[i].addEventListener("click", function(){
     // grab color of clicked squares
-    var clickedColor = this.style.background;
+     clickedColor = this.style.background;
     // compare color to pickedColor
 
     if(clickedColor === pickedColor){
@@ -113,5 +113,5 @@ function randomColor(){
   var g =Math.floor(Math.random() * 256);
     //Pick a "blue" from 0-255
   var b =Math.floor(Math.random() * 256);
-return "RGB(" + r + ", " +g + ", " +b + ")";
+return "rgb(" + r + ", " +g + ", " +b + ")";
 }
